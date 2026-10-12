@@ -1,0 +1,177 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #dbeafe;
+    font-size: 17px;
+}
+
+/* Navigation */
+nav {
+    background: #ffffff;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+nav a {
+    text-decoration: none;
+    color: #243b55;
+    font-weight: bold;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Horizontal Lines */
+hr {
+    border: none;
+    height: 1px;
+    background: #e0e6ed;
+}
+
+/* Sections */
+section {
+    background: white;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #0000000d;
+}
+
+section h2 {
+    color: #243b55;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Buttons */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Form */
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #2563eb20;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background: #141e30;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+    }
+
+    section {
+        margin: 15px 12px;
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    input,
+    textarea {
+        max-width: 100%;
+    }
+}

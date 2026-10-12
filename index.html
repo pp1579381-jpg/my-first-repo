@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Learning Web Development with HTML</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#services">Services</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Hello! Welcome to my first website.</p>
+        <button onclick="alert('Welcome to my website!')">
+            Click Me
+        </button>
+    </section>
+
+    <hr>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This website is created using HTML.</p>
+        <p>Our goal is to learn web development.</p>
+    </section>
+
+    <hr>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Learning HTML</li>
+            <li>Student Projects</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form action="process.php" method="POST"></form>
+            <label for="name">Your Name:</label>
+            <br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="email">Your Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="message">Your Message:</label>
+            <br>
+            <textarea id="message" placeholder="Write your message" required></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
